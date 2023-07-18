@@ -196,6 +196,45 @@ main{
     font-weight: 500;
 }
 
+/*-----------play instant section style-----*/
+.play-instant-section{
+    padding: 10rem 0;
+}
+.play-instant-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-instant-content{
+    text-align: right;
+    margin-right: 7rem;
+   
+}
+.play-instant-content h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.play-instant-content h3 span{
+    color: #c98ae7;
+}
+.play-instant-content p{
+    margin: 1rem 0;
+    line-height: 26px;
+    color: #534C64;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.main-img{
+    width: 100%;
+}
+.over-img{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    bottom: 120px;
+    left: -70px;
+}
+
 /*      responsive for mobile device   */
 
 
@@ -203,7 +242,7 @@ main{
     header{
         padding: 50px 10px;
     }
-    .navbar,ul,.gamer-container{
+    .navbar,ul,.gamer-container,.play-instant-container{
         flex-direction: column;
     }
     ul li{
@@ -262,6 +301,27 @@ main{
     .online-game-card p{
         margin-top: .3rem;
     }
+    .play-instant-section{
+        padding: 4rem 0;
+    }
+    .play-instant-content{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .play-instant-content h3{
+        font-size: 2rem;
+    }
+    .play-instant-content p{
+        margin-bottom: 4rem;
+    }
+    .main-img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .over-img{
+        left: -20px;
+    }
 }
 
 /*    responsive for tablet device  */
@@ -298,8 +358,34 @@ main{
     .online-game-card{
         margin: .5rem 1rem;
     }
+    .online-game-section{
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+    .online-game-section p{
+        margin: 1rem 0 3rem;
+    }
     .online-game-container{
         grid-template-columns: repeat(2,1fr);
     
+    }
+    .play-instant-section{
+        padding: 3rem 0 2rem;
+    }
+    .play-instant-container{
+        flex-direction: column;
+    }
+    .play-instant-content{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main-img{
+        width: 80%;
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+    .over-img{
+        left: 20px;
     }
 }
