@@ -264,7 +264,56 @@ main{
 .items-games img{
     width: 50px;
 }
-
+/*     footer-section   */
+footer{
+    padding: 7rem 0;
+    background-color: #0b0223;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icon-section img{
+    width: 70px;
+}
+.footer-icon-section h3{
+    font-size: 3rem;
+}
+.footer-icon-section span{
+    color: #ff42a5;
+}
+.about-our{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: .8rem 0;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+}
+.terms-and-condition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.60);
+}
+.copy-right-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+}
 
 /*      responsive for mobile device   */
 
@@ -364,13 +413,7 @@ main{
     .items-games img{
         width: 25px;
     }
-    .items-games-container{
-        flex-wrap: wrap;
-        justify-content: left;
-        align-content: center;
-        gap: .1rem;
-        margin-left: ;
-    }
+   
 }
 
 /*    responsive for tablet device  */
