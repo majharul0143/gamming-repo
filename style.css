@@ -5,7 +5,7 @@
 }
 
 body{
-    
+    background-color: #fff9fc
 }
 
 .btn-primary{
@@ -29,7 +29,7 @@ body{
 /*  header section styling  */
 
 header{
-    padding: 35px 150px;
+    padding: 30px 150px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
 }
@@ -93,7 +93,9 @@ main{
     max-width: 1100px;
     margin: 0 auto;
 }
-.banner-section{}
+.banner-section{
+
+}
 .banner-container{
     display: flex;
     justify-content: space-between;
@@ -101,6 +103,11 @@ main{
 }
 .banner-content{
     width: 60%;
+    background-image: url(images/Group\ 14.png);
+    background-position: 0% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 4rem;
 }
 .banner-content h3{
     color: #0B0223; 
@@ -161,6 +168,33 @@ main{
     font-weight: 700;
 }
 
+/*   styling online game section  */
+.online-game-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.online-game-title span{
+    color: #c98ae7;
+}
+ .game-sub-title{
+    text-align: center;
+    margin: 1.5rem 0 4rem;
+}
+
+.online-game-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.online-game-card img{
+    width: 100%;
+}
+.online-game-card p{
+    margin-top: 1rem;
+    color: #534C64;
+    font-weight: 500;
+}
 
 /*      responsive for mobile device   */
 
@@ -178,19 +212,26 @@ main{
     main{
         padding: 40px 30px;
     }
+    .banner-section{
+    }
     .banner-container{
         flex-direction: column-reverse;
     }
     .banner-content h3{
         font-size: 2rem;
     }
+    .banner-content h1{
+        font-size: 4rem;
+    }
     .banner-content .btn-secondary,.btn-primary{
         margin: .5rem auto;
-        padding: 10px 20px;
+        padding: 10px 40px;
         font-size: .9rem;
     }
     .banner-content{
-        margin-top: 4rem;
+        margin: 4rem 1rem;
+        background-size: cover;
+        background-position: center;
     }
     .gamer-section{
         padding: 2rem 0;
@@ -202,7 +243,24 @@ main{
         font-size: 2rem;
     }
     .gamer-content h4{
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    .online-game-section{
+        margin-top: 3rem;
+    }
+    .online-game-title{
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+    .game-sub-title{
+        font-size: 14px;
+    }
+    .online-game-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .online-game-card p{
+        margin-top: .3rem;
     }
 }
 
@@ -211,11 +269,10 @@ main{
 @media screen and (min-width:576px) and (max-width:992px) {
     .navbar{
         flex-direction: column;
+        margin: 0 auto;
     }
     ul{
-        margin-top: 25px;
-        flex-direction: colum;
-        gap: rem;
+        margin-top: 25px;  
     }
     .banner-container{
         flex-direction: column-reverse;
@@ -237,5 +294,12 @@ main{
     }
     .gamer-content{
         text-align: center;
+    }
+    .online-game-card{
+        margin: .5rem 1rem;
+    }
+    .online-game-container{
+        grid-template-columns: repeat(2,1fr);
+    
     }
 }
