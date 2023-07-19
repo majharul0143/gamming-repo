@@ -195,7 +195,38 @@ main{
     color: #534C64;
     font-weight: 500;
 }
-
+.online-game-card{
+    position: relative;
+}
+.hover-card{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    height: 84%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.hover-card div{
+    text-align: center;
+}
+.hover-card i{
+    color: #ffff;
+    font-size: 40px;
+}
+.hover-card p{
+    color: #ff42a5;
+    font-size: 1.1rem;
+}
+.hover-card:hover{
+    background-color: rgba(5, 2, 2, 0.501);
+    opacity: 1;
+}
 /*-----------play instant section style-----*/
 .play-instant-section{
     padding: 7rem 0 2rem;
@@ -314,6 +345,10 @@ footer{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
 }
+
+/*         hover card   */
+
+
 
 /*      responsive for mobile device   */
 
