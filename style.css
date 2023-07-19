@@ -457,6 +457,9 @@ footer{
       margin: 2rem auto;
       gap: 1rem;
    }
+   .hover-card{
+    height: 86%;
+   }
 }
 
 /*    responsive for tablet device  */
