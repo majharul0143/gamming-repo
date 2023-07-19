@@ -448,17 +448,20 @@ footer{
     }
    .about-our{
       flex-wrap: wrap;
-      width: 70%;
-      margin: 1rem auto;
+      max-width: 80%;
+      margin: 1.5rem auto 3rem auto;
+   }
+   .footer-icon{
+    font-size: 1.3rem;
    }
    .terms-and-condition{
-      width: 70%;
+      max-width: 80%;
       flex-wrap: wrap;
-      margin: 2rem auto;
-      gap: 1rem;
+      margin: 3rem auto;
+      gap: .8rem;
    }
    .hover-card{
-    height: 86%;
+    height: 90%;
    }
 }
 
